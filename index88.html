@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 - Using JavaScript</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/robot.jpg" alt="White plastic robot">
+        <h1>Raj's Robot Rentals</h1>
+        <h2>Quote Generator</h2>
+        <p>We have 2 models available for booking:</p>
+        <ul>
+            <li>Model XYZ: $100 per day</li>
+            <li>Model CPRG: $213 per day</li>
+        </ul>
+        <div>
+            <label for="model">Model:</label>
+            <select id="model" name="model">
+                <option value="XYZ">Model XYZ</option>
+                <option value="CPRG">Model CPRG</option>
+            </select>
+        </div>
+        <div>
+            <label for="duration">Duration (days):</label>
+            <input type="number" id="duration" name="duration">
+        </div>
+        <p id="totalCost">The cost to book Model XYZ for 0 days is $0.00.</p>
+        <button id="switchModel">Switch Model</button>
+        <button id="changeDuration">Change Duration</button>
+        <p>Thank you for your interest in booking a 'bot!</p>
+    </div>
+    <p class="photo-credit">Photo by Possessed Photography on Unsplash</p>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
